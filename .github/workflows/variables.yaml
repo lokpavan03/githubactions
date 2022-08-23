@@ -1,5 +1,5 @@
 name: ENV variables
-on: PUSH
+on: push
 env: 
   Env_variable : Global-variable
 jobs:
