@@ -1,9 +1,10 @@
 name: ENV variables
 on: push
- workflow_dispatch:
+
 env: 
   Env_variable : Global-variable
   secret: ${{ secrets.secret1 }}
+      
 jobs:
   jobA: 
     runs-on: ubuntu-latest
