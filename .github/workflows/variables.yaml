@@ -11,8 +11,11 @@ jobs:
     env:
       Env_variable: Job-Variable
     steps:
-      - name: Display ENV variables
+      - uses: actions/checkout@v1
+      - name: Decrypt file example
       #  env:
          # Env_variable : Step-Variable
-        run: echo $secret
+        run: |
+          base64 encrypt.txt >> encrpted.txt
+          echo $enrypted.txt
  
