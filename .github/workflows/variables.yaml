@@ -2,6 +2,7 @@ name: ENV variables
 on: push
 env: 
   Env_variable : Global-variable
+  secret: ${{ secrets.secret1 }}
 jobs:
   jobA: 
     runs-on: ubuntu-latest
@@ -11,5 +12,5 @@ jobs:
       - name: Display ENV variables
       #  env:
          # Env_variable : Step-Variable
-        run: echo $Env_variable        
+        run: echo $secret
  
