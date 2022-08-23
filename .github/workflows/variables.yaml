@@ -1,5 +1,6 @@
 name: ENV variables
 on: push
+ workflow_dispatch:
 env: 
   Env_variable : Global-variable
   secret: ${{ secrets.secret1 }}
