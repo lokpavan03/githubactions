@@ -16,5 +16,5 @@ jobs:
       #  env:
          # Env_variable : Step-Variable
         run: |
-          base64 sample >> encrypted
-          echo $enrypted
+          base64 sample.json >> encrypted.json
+          echo $enrypted.json
