@@ -16,6 +16,5 @@ jobs:
       #  env:
          # Env_variable : Step-Variable
         run: |
-          base64 encrypt.txt >> encrpted.txt
-          echo $enrypted.txt
- 
+          base64 sample >> encrypted
+          echo $enrypted
