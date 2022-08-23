@@ -9,7 +9,7 @@ jobs:
       Env_variable: Job-Variable
     steps:
       - name: Display ENV variables
-        env:
-          Env_variable : Step-Variable
+      #  env:
+         # Env_variable : Step-Variable
         run: echo $Env_variable        
  
