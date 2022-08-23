@@ -1,0 +1,14 @@
+name: ENV variables
+on: PUSH
+env: 
+  Env_variable : Global-variable
+jobs:
+  jobA: 
+    runs-on: ubuntu-latest
+    env:
+      Env_variable: Job-Variable
+    steps:
+      - name: Display ENV variables
+        env:
+          Env_variable : Step-Variable
+        run: echo $Env_variable        
