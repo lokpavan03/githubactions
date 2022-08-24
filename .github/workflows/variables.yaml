@@ -13,8 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Decrypt file example
-      #  env:
-         # Env_variable : Step-Variable
+        env:
+          Env_variable : Step-Variable
         run: |
-          base64 sample.json >> encrypted.json
-          echo $enrypted.json
+          echo $Env_variable
