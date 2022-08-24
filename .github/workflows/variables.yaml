@@ -4,7 +4,7 @@ on: push
 env: 
   Env_variable : Global-variable
   secret: ${{ secrets.secret1 }}
-      
+# sample commit      
 jobs:
   jobA: 
     runs-on: ubuntu-latest
